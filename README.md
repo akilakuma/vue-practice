@@ -50,14 +50,13 @@ Vue.js - The Progressive JavaScript Framework
   npm run dev
 ```
 
-安裝npm相關需要的套件
+# docker設定參考
 ```
-# 用好用的bootstrap-vue
-# 省去刻一堆css
-npm install bootstrap-vue
+https://dev.to/ysmnikhil/how-to-build-with-react-or-vue-with-vite-and-docker-1a3l
+```
 
 
-```
+
 
 
 ### 這個當作備案

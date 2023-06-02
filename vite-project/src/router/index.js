@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LocalView from '../views/LocalView.vue'
+import RoomView from '../views/RoomView.vue'
+import RestaurantView from '../views/RestaurantView.vue'
+import AboutView from '../views/AboutView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,19 +13,19 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/booking',
-      name: 'booking',
-      component: LocalView
+      path: '/room',
+      name: 'room',
+      component: RoomView
     },
     {
-      path: '/resturant',
-      name: 'resturant',
-      component: LocalView
+      path: '/restaurant',
+      name: 'restaurant',
+      component: RestaurantView
     },
     {
       path: '/activity',
       name: 'activity',
-      component: LocalView
+      component: AboutView
     },
     {
       path: '/about',

@@ -13,7 +13,12 @@ import NavbarItem from './components/NavbarItem.vue'
 <script >
 
 export default {
-  name: 'App',
+  name: 'Home',
+  data() {
+    return {
+    };
+  },
+
 }
 
 </script>

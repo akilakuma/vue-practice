@@ -1,0 +1,15 @@
+# 第一阶段：构建 Vite 项目
+FROM node:18-alpine3.17 as builder
+WORKDIR /app
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+# 第二阶段：运行 Nginx 服务器
+FROM nginx:latest
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY . /usr/local/etc/nginx/nginx.conf.default
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

@@ -33,3 +33,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+# 開發過程中有安裝這些東西
+```
+npm install axios
+npm install @vuepic/vue-datepicker
+```
