@@ -14,7 +14,7 @@ export default defineConfig({
   },
   server: {
     host: true,
-    port: 80, // This is the port which we will use in docker
+    port: 8080, // This is the port which we will use in docker
     proxy: {
       // 請參考 https://vitejs.dev/config/server-options.html
       '/room-list': {

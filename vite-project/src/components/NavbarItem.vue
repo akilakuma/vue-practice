@@ -7,45 +7,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">小浣熊大飯店</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <RouterLink to="/" class="nav-link">首頁</RouterLink>
-          
-            </li>
-            <li class="nav-item">
-              <RouterLink to="/room" class="nav-link">訂房</RouterLink>
-            </li>
-            <li class="nav-item">
-              <nav>
-              <RouterLink to="/restaurant" class="nav-link">餐廳</RouterLink>
-              </nav>
-            </li>
-            <li class="nav-item">
-              <RouterLink to="/activity" class="nav-link">活動</RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink to="/about" class="nav-link">關於我們</RouterLink>
-            </li>
-          </ul>
-        </div>
 
-      </div>
+    <nav class="bg-sky-100 p-4 space-x-3 mb-8 mx-auto md:mx-auto">
+      <RouterLink to="/" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600" >小浣熊大飯店</RouterLink>
+      <RouterLink to="/room" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">訂房</RouterLink>
+      <RouterLink to="/restaurant" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">餐廳</RouterLink>
+      <RouterLink to="/activity" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">活動</RouterLink>
+      <RouterLink to="/about" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">關於我們</RouterLink>
     </nav>
 
-    <div>
-        <router-view></router-view>
-    </div>
+    
+        
 
-  </div>
 </template>
 
 <style scoped>

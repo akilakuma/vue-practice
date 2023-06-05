@@ -5,8 +5,14 @@ import NavbarItem from './components/NavbarItem.vue'
 </script>
 
 <template>
+  <div class="h-full">
+    <NavbarItem/>
+    <router-view></router-view>
+    <footer>
 
-  <NavbarItem/>
+    </footer>
+  </div>
+
 </template>
 
 
