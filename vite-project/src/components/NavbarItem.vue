@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
       <RouterLink to="/" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600" >小浣熊大飯店</RouterLink>
       <RouterLink to="/room" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">訂房</RouterLink>
       <RouterLink to="/restaurant" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">餐廳</RouterLink>
-      <RouterLink to="/activity" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">活動</RouterLink>
+      <RouterLink to="/member" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">會員</RouterLink>
       <RouterLink to="/about" class="inline-block p-2 text-white bg-blue-400 rounded md:p-0 dark:text-white md:dark:text-blue-500" active-class="bg-blue-600">關於我們</RouterLink>
     </nav>
 
