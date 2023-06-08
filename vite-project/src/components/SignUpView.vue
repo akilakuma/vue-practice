@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -41,7 +43,7 @@ export default {
 
       
       try {
-        const url = 'https://localhost/register'; // 替換為您的 API 端點
+        const url = 'http://localhost:8080/register'; // 替換為您的 API 端點
         const data = {
           email: this.email,
           password: passwordHash
@@ -52,6 +54,9 @@ export default {
           // 請求成功
           const responseData = response.data;
           console.log('註冊成功', responseData);
+            
+          // 完成註冊後進行頁面導航
+          await this.$router.push('/');
         } else {
           // 請求失敗
           console.log('註冊失敗', response.status, response.statusText);
